@@ -61,7 +61,7 @@ section {
 .hero-form {
     border: solid 3px #024e76;
     background-color: #fce138;
-    padding: 1.5rem;
+    padding: 1.25rem;
     width: 31.25rem;
     color: #024e76;
     position:absolute;
@@ -70,7 +70,7 @@ section {
 }
 
 .hero-form h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 0;
 }
 
@@ -102,7 +102,31 @@ section {
 }
 /* hero style end */
 
-  /* apply styles to footer */
+/* intro styles */
+
+.intro {
+    text-align: center;
+}
+
+.intro h2 {
+    display: inline-block;
+    font-size: 3.4375rem;
+    color: #024e76;
+    margin-bottom: 2.1875rem;
+    padding: 0 6.25rem 1.25 6.25rem;
+    border-bottom: .1875rem solid #fce138;
+}
+
+.intro p {
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 1.25rem;
+    margin: auto;
+}
+/* intro styles end */
+
+  /*  footer styles */
   footer {
     background: #fce138;
     width: 100%;
