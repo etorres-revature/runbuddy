@@ -8,7 +8,12 @@ body {
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
   }
-  /* apply styles to <header> */
+
+section {
+    padding: 3.75rem;
+}
+
+  /* header styles */
   header {
       padding: 1.25rem 1.82rem;
       background-color: #39a6b2;
@@ -41,27 +46,52 @@ body {
       font-weight: lighter;
       font-size: 1.6rem
   }
+/* header end */
+
+
+/* hero style start */
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    height: 37.5rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-form {
+    border: solid 3px #024e76;
+    background-color: #fce138;
+    padding: 1.5rem;
+    width: 31.25rem;
+    color: #024e76;
+    position:absolute;
+    bottom: 7.5rem;
+    right: 8.75rem;
+}
+/* hero style end */
 
   /* apply styles to footer */
   footer {
-      background: #fce138;
-      width: 100%;
-      padding: 2.5rem 2.18rem;
-  }
+    background: #fce138;
+    width: 100%;
+    padding: 2.5rem 2.18rem;
+}
 
-  footer h2 {
-      display: inline;
-      color: #024e76;
-      font-size: 1.875rem;
-      margin: 0;
-  }
+footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 1.875rem;
+    margin: 0;
+}
 
-  footer div {
-      float: right;
-      line-height: 1.5;
-      text-align: right;
-  }
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
 
-  footer a {
-      color: #024e76;
-  }
+footer a {
+    color: #024e76;
+}
+
+/* footer style end */
