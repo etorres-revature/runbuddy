@@ -30,6 +30,14 @@ section {
     border-color: #39a6b2;
 }
 
+.text-left {
+    text-align: left
+}
+
+.text-right {
+    text-align: right
+}
+
   /* header styles */
   header {
       padding: 1.25rem 1.82rem;
@@ -68,7 +76,7 @@ section {
 
 /* hero style start */
 .hero {
-    background-image: url("../images/hero-bg.jpg");
+    background-image: url("../images/hero/hero-bg.jpg");
     height: 37.5rem;
     background-size: cover;
     background-position: center;
@@ -120,7 +128,6 @@ section {
 /* hero style end */
 
 /* intro styles */
-
 .intro {
     text-align: center;
 }
@@ -164,6 +171,47 @@ section {
     font-size: 1.4375rem;
 }
 /* steps styles end */
+
+/* trainers styles */
+.trainers {
+    text-align: center;
+}
+
+.trainer {
+    width: 56.25rem;
+    margin: 0 auto 1.875rem auto;
+    background: #024e76;
+    color: #fce138;
+    overflow: auto;
+}
+
+.trainer img {
+    width: 35%;
+    float: left;
+}
+
+.trainer-bio {
+    padding: 2.1875;
+    float: left;
+    width: 65%;
+}
+
+.trainer-bio h3 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.trainer-bio h4 {
+    font-weight: lighter;
+    font-size: 1.625rem;
+    margin-bottom: 1.5625;
+}
+
+.trainer-bio p {
+    font-size: 1.0625;
+    line-height: 1.3;
+}
+/* trainers end */
 
   /*  footer styles */
   footer {
