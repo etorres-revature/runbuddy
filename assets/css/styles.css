@@ -40,25 +40,27 @@ section {
 
   /* header styles */
   header {
-      padding: 1.25rem 1.82rem;
       background-color: #39a6b2;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 1.25rem 1.82rem;
   }
 
   header h1 {
+      color: #fce138;
       font-weight: bold;
       font-size: 2.2rem;
-      color: #fce138;
       margin: 0;
-      display: inline;
   }
 
   header a {
-      text-decoration: none;
       color: #fce138;
+      text-decoration: none;
   }
 
   header nav {
-      float: right;
+
       margin: .5rem 0;
   }
 
