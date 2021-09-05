@@ -37,11 +37,19 @@ section {
 
   /* header styles */
   header {
+      background-attachment: fixed;
       background-color: #39a6b2;
+      background-image: url("../images/hero/flipped-hero-image.jpg");
+      background-position: 80%;
+      background-size: cover;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       padding: 1.25rem 1.82rem;
+      position: -webkit-sticky;
+      position: sticky;
+      text-shadow: 0 0 .625rem rgba(0,0,0,0.5);
+      top: 0;
   }
 
   header h1 {
@@ -72,6 +80,14 @@ section {
       font-size: 1.55vw;
       font-weight: lighter;
       padding: .625rem .9375rem;
+      text-shadow: 0 0 .625rem rgba(0,0,0,0.5);
+  }
+
+  header nav ul li a:hover {
+      background: #fce138;
+      border-radius: .9375rem;
+      color: #024e76;
+      text-shadow: none;
   }
 /* header end */
 
@@ -79,8 +95,9 @@ section {
 /* hero style start */
 .hero {
     align-items: flex-start;
+    background-attachment: fixed;
     background-image: url("../images/hero/flipped-hero-image.jpg");
-    background-position: center;
+    background-position: 80%;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -93,6 +110,7 @@ section {
     margin: 3.5%;
     line-height: 1.2;
     text-align: right;
+    text-shadow: 0 0 .625rem rgba(0,0,0,0.5);
     width: 35%;
 }
 
@@ -103,7 +121,9 @@ section {
 }
 
 .hero-form {
-    background-color: #fce138;
+    background-color: rgba(252, 225, 56, 0.7);
+    border-radius: .9375rem;
+    box-shadow: 0 0 .625rem rgba(0,0,0,0.5);
     border: solid 3px #024e76;
     color: #024e76;
     margin: 3.5%;
@@ -125,7 +145,9 @@ section {
 } */
 
 .form-input{
+    background-color: rgba(255,255,255, 0.5);
     border: 1px solid #024e76;
+    border-radius: .625rem;
     display: block;
     padding: .44rem .95rem;
     font-size: 1rem;
@@ -134,13 +156,23 @@ section {
     margin-bottom: .95rem;
 }
 
+.form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  }
+
 .hero-form button {
     color: #fce138;
     background-color: #024e76;
     border: none;
+    border-radius: .625rem;
     padding: .625rem 1.25rem;
     font-size: 1rem;
     float: right;
+}
+
+.hero-form button:hover {
+    background-color: #39a6b2;
 }
 /* hero style end */
 
@@ -170,6 +202,14 @@ section {
     padding-bottom: 3.125rem;
     width: 80%;
 }
+
+.step:last-child {
+    border-bottom: none;
+} 
+
+/* .step:nth-child(even) {
+    border-bottom: 1px solid #39a6b2;
+  } */
 
 .step h3 {
     color: #024e76;
@@ -295,7 +335,9 @@ section {
 }
 
 .contact-form input, .contact-form textarea {
+    background-color: rgba(255,255,255, 0.75);
     border: 1px solid #024e76;
+    border-radius: .625rem;
     color: #024e76;
     display: block;
     font-size: 1rem;
@@ -305,14 +347,25 @@ section {
     width: 100%;
 }
 
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  }
+
 .contact-form button {
     background: #fce138;
     border: none;
+    border-radius: .625rem;
     color: #024e76;
     font-size: 1rem;
     padding: .9375rem 0;
     text-align: center;
     width: 100%;
+}
+
+.contact-form button:hover {
+    background: #39a6b2;
+    color: #fce138;
 }
 /* reach out end */
 
@@ -351,6 +404,7 @@ footer a {
     header {
         justify-content: center;
         padding-bottom: 0;
+        position: relative;
     }
 
     header h1 {
