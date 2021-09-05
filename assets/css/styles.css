@@ -46,10 +46,11 @@ section {
       flex-wrap: wrap;
       justify-content: space-between;
       padding: 1.25rem 1.82rem;
-      position: -webkit-sticky;
+      /* position: -webkit-sticky; */
       position: sticky;
       text-shadow: 0 0 .625rem rgba(0,0,0,0.5);
       top: 0;
+      z-index: 9;
   }
 
   header h1 {
@@ -128,7 +129,7 @@ section {
     color: #024e76;
     margin: 3.5%;
     padding: 1.25rem;
-    width: 40%;
+    width: 45%;
 }
 
 .hero-form h3 {
@@ -170,6 +171,66 @@ section {
     font-size: 1rem;
     float: right;
 }
+
+.checkbox-wrapper input, .radio-wrapper input {
+    opacity: 0;
+  }
+
+  .checkbox-wrapper label, .radio-wrapper label {
+      left: .625rem;
+      line-height: 1.6;
+      margin: .625rem;
+      position: relative;
+  }
+
+  .checkbox-wrapper label::before, .radio-wrapper label::before {
+      background: rgba(255,255,255, 0.75);
+      border: 1px solid 024e76;
+      content: "";
+      height: 1.25rem;
+      left: -1.875rem;
+      position: absolute;
+      top: -.25rem;
+      width: 1.25rem;
+  }
+
+  .radio-wrapper label::before {
+      border-radius: 50%;
+  }
+
+  .radio-wrapper label::after {
+      background: #024e76;
+      background-image: radial-gradient(circle, #39a6b2, #024e76);
+      border-radius: 50%;
+      content: "";
+      height: 1.25rem;
+      left: -1.8125rem;
+      position: absolute;
+      top: -.1875;
+      width: 1.25rem;
+  }
+
+  .checkbox-wrapper label::after {
+      border-bottom: 2px solid #024e76;
+      border-left: 2px solid #024e76;
+      content: "";
+      height: .375rem;
+      left: -1.625rem;
+      position: absolute;
+      top: .0625rem;
+      transform: rotate(-58deg);
+      width: .875rem;
+  }
+
+  .checkbox-wrapper input + label::after, 
+  .radio-wrapper input + label::after {
+    content: none;
+  }
+  
+  .checkbox-wrapper input:checked + label::after, 
+  .radio-wrapper input:checked + label::after {
+    content: "";
+  }
 
 .hero-form button:hover {
     background-color: #39a6b2;
