@@ -167,23 +167,47 @@ section {
     background: #fce138
 }
 
-.steps div {
-    margin-bottom: 5rem;
+.step {
+    align-items: center;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3.125rem auto;
+    padding-bottom: 3.125rem;
+    width: 80%;
 }
 
-.steps img {
-    width: 15%;
-    margin: .625rem 0;
-}
-
-.steps h3 {
+.step h3 {
     color: #024e76;
+    flex: 1 30%;
     font-size: 2.875rem;
-    margin-top: .625rem;
 }
 
-.steps span {
-    font-size: 2.375rem;
+.step-info {
+    align-items: center;
+    display: flex;
+    flex: 2 70%;
+    flex-wrap: wrap;
+}
+
+.step-img {
+    flex: 1 12%;
+    margin-right: 1.25rem;
+}
+
+.step-img img {
+    max-width: 100%;
+}
+
+.step-text {
+    flex: 12;
+}
+
+.step h4 {
+    color: #024e76;
+    font-size: 1.625rem;
+    line-height: 1.5;
 }
 
 .steps p {
