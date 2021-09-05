@@ -1,4 +1,4 @@
-# Run Buddy
+# Run Buddy, Inc. 
 
 ## Purpose
 A landing page that offers fitness training services provided by Run Buddy, Inc.
@@ -12,3 +12,5 @@ https://lernantino.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Eric D. Torres
+
+### ©️2019 Run Buddy, Inc 
