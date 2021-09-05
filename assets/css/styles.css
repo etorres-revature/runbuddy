@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+  }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +11,7 @@
 }
 
 body {
-    color: #39a6b2;
+    color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
   }
 
@@ -15,7 +21,7 @@ section {
 
 .section-title {
     border-bottom: .1875rem solid;
-    color: #024e76;
+    color: var(--secondary-color);
     font-size: 3rem;
     margin: 0 auto 2.1875rem auto;
     padding-bottom: 1.25rem;
@@ -24,11 +30,11 @@ section {
 }
 
 .primary-border {
-    border-color: #fce138;
+    border-color: var(--primary-color);
 }
 
 .secondary-border {
-    border-color: #39a6b2;
+    border-color: var(--tertiary-color);
 }
 
 .flex-row {
@@ -38,7 +44,7 @@ section {
   /* header styles */
   header {
       background-attachment: fixed;
-      background-color: #39a6b2;
+      background-color: var(--tertiary-color);
       background-image: url("../images/hero/flipped-hero-image.jpg");
       background-position: 80%;
       background-size: cover;
@@ -54,14 +60,14 @@ section {
   }
 
   header h1 {
-      color: #fce138;
+      color: var(--primary-color);
       font-size: 2.2rem;
       font-weight: bold;
       margin: 0;
   }
 
   header a {
-      color: #fce138;
+      color: var(--primary-color);
       text-decoration: none;
   }
 
@@ -85,9 +91,9 @@ section {
   }
 
   header nav ul li a:hover {
-      background: #fce138;
+      background: var(--primary-color);
       border-radius: .9375rem;
-      color: #024e76;
+      color: var(--secondary-color);
       text-shadow: none;
   }
 /* header end */
@@ -116,7 +122,7 @@ section {
 }
 
 .hero-cta h2 {
-    color: #fce138;
+    color: var(--primary-color);
     font-size: 3.4375rem;
     font-style: italic;
 }
@@ -125,8 +131,8 @@ section {
     background-color: rgba(252, 225, 56, 0.7);
     border-radius: .9375rem;
     box-shadow: 0 0 .625rem rgba(0,0,0,0.5);
-    border: solid 3px #024e76;
-    color: #024e76;
+    border: solid 3px var(--secondary-color);
+    color: var(--secondary-color);
     margin: 3.5%;
     padding: 1.25rem;
     width: 45%;
@@ -147,12 +153,12 @@ section {
 
 .form-input{
     background-color: rgba(255,255,255, 0.5);
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     border-radius: .625rem;
     display: block;
     padding: .44rem .95rem;
     font-size: 1rem;
-    color: #024e76;
+    color: var(--secondary-color);
     width: 100%;
     margin-bottom: .95rem;
 }
@@ -163,8 +169,8 @@ section {
   }
 
 .hero-form button {
-    color: #fce138;
-    background-color: #024e76;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
     border: none;
     border-radius: .625rem;
     padding: .625rem 1.25rem;
@@ -199,7 +205,7 @@ section {
   }
 
   .radio-wrapper label::after {
-      background: #024e76;
+      background: var(--secondary-color);
       background-image: radial-gradient(circle, #39a6b2, #024e76);
       border-radius: 50%;
       content: "";
@@ -211,8 +217,8 @@ section {
   }
 
   .checkbox-wrapper label::after {
-      border-bottom: 2px solid #024e76;
-      border-left: 2px solid #024e76;
+      border-bottom: 2px solid var(--secondary-color);
+      border-left: 2px solid var(--secondary-color);
       content: "";
       height: .375rem;
       left: -1.625rem;
@@ -233,14 +239,14 @@ section {
   }
 
 .hero-form button:hover {
-    background-color: #39a6b2;
+    background-color: var(--tertiary-color);
 }
 /* hero style end */
 
 /* intro styles */
 .intro p {
     line-height: 1.7;
-    color: #39a6b2;
+    color: var(--tertiary-color);
     width: 80%;
     font-size: 1.25rem;
     margin: auto;
@@ -250,12 +256,12 @@ section {
 
 /* steps styles */
 .steps {
-    background: #fce138
+    background: var(--primary-color)
 }
 
 .step {
     align-items: center;
-    border-bottom: 1px solid #39a6b2;
+    border-bottom: 1px solid var(--tertiary-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -273,7 +279,7 @@ section {
   } */
 
 .step h3 {
-    color: #024e76;
+    color: var(--secondary-color);
     flex: 1 30%;
     font-size: 2.875rem;
 }
@@ -299,13 +305,13 @@ section {
 }
 
 .step h4 {
-    color: #024e76;
+    color: var(--secondary-color);
     font-size: 1.625rem;
     line-height: 1.5;
 }
 
 .steps p {
-    color: #39a6b2;
+    color: var(--tertiary-color);
     font-size: 1.4375rem;
 }
 /* steps styles end */
@@ -320,8 +326,8 @@ section {
 }
 
 .trainer {
-    background: #024e76;
-    color: #fce138;
+    background: var(--secondary-color);
+    color: var(--primary-color);
     flex: 1;
     margin: 1.25rem;
 }
@@ -352,11 +358,11 @@ section {
 
 /* reach out styles */
 .contact {
-    background: #024e76;
+    background: var(--secondary-color);
 }
 
 .contact h2 {
-    color: #fce138;
+    color: var(--primary-color);
 }
 
 .contact-info {
@@ -380,7 +386,7 @@ section {
 }
 
 .contact-info h3 {
-    color: #fce138;
+    color: var(--primary-color);
     font-size: 2rem;
 }
 
@@ -392,14 +398,14 @@ section {
 }
 
 .contact-info a {
-    color: #fce138;
+    color: var(--primary-color);
 }
 
 .contact-form input, .contact-form textarea {
     background-color: rgba(255,255,255, 0.75);
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     border-radius: .625rem;
-    color: #024e76;
+    color: var(--secondary-color);
     display: block;
     font-size: 1rem;
     margin-bottom: .9375rem;
@@ -414,10 +420,10 @@ section {
   }
 
 .contact-form button {
-    background: #fce138;
+    background: var(--primary-color);
     border: none;
     border-radius: .625rem;
-    color: #024e76;
+    color: var(--secondary-color);
     font-size: 1rem;
     padding: .9375rem 0;
     text-align: center;
@@ -425,14 +431,14 @@ section {
 }
 
 .contact-form button:hover {
-    background: #39a6b2;
-    color: #fce138;
+    background: var(--tertiary-color);
+    color: var(--primary-color);
 }
 /* reach out end */
 
   /*  footer styles */
   footer {
-    background: #fce138;
+    background: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -441,7 +447,7 @@ section {
 }
 
 footer h2 {
-    color: #024e76;
+    color: var(--secondary-color);
     font-size: 1.875rem;
     margin: 0;
 }
@@ -452,7 +458,7 @@ footer div {
 }
 
 footer a {
-    color: #024e76;
+    color: var(--secondary-color);
 }
 /* footer style end */
 
