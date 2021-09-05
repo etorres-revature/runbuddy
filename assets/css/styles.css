@@ -389,3 +389,31 @@ footer a {
         width: 100%
     }
 }
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 1.875rem .9375r3em;
+    }
+
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    .step-info {
+        flex: 2 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .step-img {
+        flex: 0 32%;
+        margin-bottom: .9375rem;
+        margin-right: 0;
+        margin-top: .9375rem;
+    }
+
+    .step-text {
+        flex: 100%;
+    }
+}
