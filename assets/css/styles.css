@@ -218,42 +218,41 @@ section {
 
 /* trainers styles */
 .trainers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .trainer {
-
-    width: 56.25rem;
-    margin: 0 auto 1.875rem auto;
     background: #024e76;
     color: #fce138;
-    overflow: auto;
+    flex: 1;
+    margin: 1.25rem;
 }
 
 .trainer img {
-    width: 35%;
-    float: left;
+    width: 100%;
 }
 
 .trainer-bio {
-    padding: 2.1875rem;
-    float: left;
-    width: 65%;
+    line-height: 1.3;
+    padding: 1.5625rem;
 }
 
 .trainer-bio h3 {
-    font-size: 2rem;
-    margin-bottom: .5rem;
+    font-size: 1.75rem;
 }
 
 .trainer-bio h4 {
+    font-size: 1.375rem;
     font-weight: lighter;
-    font-size: 1.625rem;
-    margin-bottom: 1.5625rem;
+    margin-bottom: .9375rem;
 }
 
 .trainer-bio p {
     font-size: 1.0625rem;
-    line-height: 1.3;
 }
 /* trainers end */
 
