@@ -60,18 +60,21 @@ section {
   }
 
   header nav {
-
       margin: .5rem 0;
   }
 
-  header nav ul li {
-      display: inline;
+  header nav ul {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      list-style: none;
   }
 
   header nav ul li a {
       margin: 0 1.85rem;
       font-weight: lighter;
-      font-size: 1.6rem
+      font-size: 1.55vw;
   }
 /* header end */
 
