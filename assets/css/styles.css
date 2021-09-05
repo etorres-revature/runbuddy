@@ -1,7 +1,7 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -14,12 +14,12 @@ section {
 }
 
 .section-title {
+    border-bottom: .1875rem solid;
+    color: #024e76;
     display: inline-block;
     font-size: 3.4375rem;
-    color: #024e76;
     margin-bottom: 2.1875rem;
     padding: 0 6.25rem 1.25rem 6.25rem;
-    border-bottom: .1875rem solid
 }
 
 .primary-border {
@@ -49,8 +49,8 @@ section {
 
   header h1 {
       color: #fce138;
-      font-weight: bold;
       font-size: 2.2rem;
+      font-weight: bold;
       margin: 0;
   }
 
@@ -73,8 +73,8 @@ section {
 
   header nav ul li a {
       margin: 0 1.85rem;
-      font-weight: lighter;
       font-size: 1.55vw;
+      font-weight: lighter;
   }
 /* header end */
 
@@ -82,21 +82,35 @@ section {
 /* hero style start */
 .hero {
     background-image: url("../images/hero/flipped-hero-image.jpg");
-    height: 37.5rem;
-    background-size: cover;
     background-position: center;
-    position: relative;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-cta {
+    color: #fff;
+    font-size: 1.125rem;
+    margin: 3.5%;
+    line-height: 1.3;
+    text-align: right;
+    width: 35%;
+}
+
+.hero-cta h2 {
+    color: #fce138;
+    font-size: 3.4375rem;
+    font-style: italic;
 }
 
 .hero-form {
-    border: solid 3px #024e76;
     background-color: #fce138;
-    padding: 1.25rem;
-    width: 31.25rem;
+    border: solid 3px #024e76;
     color: #024e76;
-    position:absolute;
-    bottom: 7.5rem;
-    right: 8.75rem;
+    margin: 3.5%;
+    padding: 1.25rem;
+    width: 40%;
 }
 
 .hero-form h3 {
@@ -183,6 +197,7 @@ section {
 }
 
 .trainer {
+
     width: 56.25rem;
     margin: 0 auto 1.875rem auto;
     background: #024e76;
